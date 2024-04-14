@@ -1,0 +1,46 @@
+> test_pa-4-2
+cd nemu && make
+------make------
+1706189992209
+Thu 25 Jan 2024 09:39:52 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/nemu'
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/cache.o src/memory/mmu/cache.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/tlb.o src/memory/mmu/tlb.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/page.o src/memory/mmu/page.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/segment.o src/memory/mmu/segment.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/memory.o src/memory/memory.c
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/nemu'
+cd testcase && make
+------make------
+1706189992533
+Thu 25 Jan 2024 09:39:52 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov.o src/mov.S
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov-cmp.o src/mov-cmp.S
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/bit.o src/bit.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/hello-str.o src/hello-str.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/fib.o src/fib.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov-jcc.o src/mov-jcc.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/min3.o src/min3.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/matrix-mul-small.o src/matrix-mul-small.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/shuixianhua.o src/shuixianhua.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/if-else.o src/if-else.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/prime.o src/prime.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/sub-longlong.o src/sub-longlong.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/gotbaha.o src/gotbaha.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/hello-inline.o src/hello-inline.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/matrix-mul.o src/matrix-mul.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/movsx.o src/movsx.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/fact.o src/fact.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/pascal.o src/pascal.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mul-longlong.o src/mul-longlong.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/wanshu.o src/wanshu.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/sum.o src/sum.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov-c.o src/mov-c.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/max.o src/max.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/select-sort.o src/select-sort.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/echo.o src/echo.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/add-longlong.o src/add-longlong.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/test-float.o src/test-float.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/quick-sort.o src/quick-sort.c

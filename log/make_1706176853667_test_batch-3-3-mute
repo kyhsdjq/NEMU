@@ -1,0 +1,1102 @@
+> test_batch-3-3-mute
+make-[1]: Entering directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase mov-c --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-c[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xca[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x0[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c2
+NEMU2 terminated
+./nemu/nemu --autorun --testcase mov-jcc --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-jcc[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xc9[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x0[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c1
+NEMU2 terminated
+./nemu/nemu --autorun --testcase add --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/add[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x90[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x120[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049088
+NEMU2 terminated
+./nemu/nemu --autorun --testcase add-longlong --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/add-longlong[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x112[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x80[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x240[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049100
+NEMU2 terminated
+./nemu/nemu --autorun --testcase if-else --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/if-else[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xb6[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x58[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x78[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490ae
+NEMU2 terminated
+./nemu/nemu --autorun --testcase fib --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/fib[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x6c[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x140[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049064
+NEMU2 terminated
+./nemu/nemu --autorun --testcase bubble-sort --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/bubble-sort[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xef[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x58[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x190[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490e7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase quick-sort --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/quick-sort[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x1ca[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x84[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x190[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080491bc
+NEMU2 terminated
+./nemu/nemu --autorun --testcase select-sort --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/select-sort[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xef[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x58[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x190[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490e7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase max --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/max[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xa2[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x58[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x120[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x0804909a
+NEMU2 terminated
+./nemu/nemu --autorun --testcase min3 --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/min3[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xcf[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x58[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x820[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase pascal --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/pascal[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x13c[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x7c[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049134
+NEMU2 terminated
+./nemu/nemu --autorun --testcase bit  --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/bit[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xd4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x1fc[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x78[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080491f4
+NEMU2 terminated
+./nemu/nemu --autorun --testcase movsx --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/movsx[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x13a[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x0[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049132
+NEMU2 terminated
+./nemu/nemu --autorun --testcase sub-longlong --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/sub-longlong[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x109[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x7c[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x240[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490f7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase fact --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/fact[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xa2[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x64[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x34[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049094
+NEMU2 terminated
+./nemu/nemu --autorun --testcase gotbaha --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/gotbaha[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xd4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xcd[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x78[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c5
+NEMU2 terminated
+./nemu/nemu --autorun --testcase leap-year --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/leap-year[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x8e[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x58[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x1f4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049086
+NEMU2 terminated
+./nemu/nemu --autorun --testcase matrix-mul-small --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/matrix-mul-small[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x11c[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x40[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x4d0[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049110
+NEMU2 terminated
+./nemu/nemu --autorun --testcase matrix-mul --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/matrix-mul[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x169[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x40[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x1d4c0[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x0804915d
+NEMU2 terminated
+./nemu/nemu --autorun --testcase mul-longlong  --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mul-longlong[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x12c[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x7c[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x70[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x0804911a
+NEMU2 terminated
+./nemu/nemu --autorun --testcase prime --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/prime[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x90[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x54[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049088
+NEMU2 terminated
+./nemu/nemu --autorun --testcase shuixianhua --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/shuixianhua[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x10b[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x60[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x10[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490fe
+NEMU2 terminated
+./nemu/nemu --autorun --testcase sum --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/sum[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xd4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x46[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x0804903e
+NEMU2 terminated
+./nemu/nemu --autorun --testcase wanshu --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/wanshu[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x8e[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0xc[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049086
+NEMU2 terminated
+./nemu/nemu --autorun --testcase struct --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/struct[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xfa[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x70[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x0[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490ec
+NEMU2 terminated
+./nemu/nemu --autorun --testcase string --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/string[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x386[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x148[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x1e[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x3000, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049150
+NEMU2 terminated
+./nemu/nemu --autorun --testcase hello-str  --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/hello-str[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x699a[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1008000, filesz = 0xe94[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x8000, offset = 0x8000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x94[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1009000, filesz = 0x908[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x9000, offset = 0x9000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490d8
+NEMU2 terminated
+./nemu/nemu --autorun --testcase test-float --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/test-float[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,32,loader] {kernel} ELF loading from ram disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0x0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x34[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xd4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x54[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xcb[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x1000, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0x74[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x58[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0x2000, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+nemu: HIT [0;31mBAD[0m TRAP at eip = 0x080490bd
+NEMU2 terminated
+make-[1]: Leaving directory '/home/pa221220164/pa_nju'

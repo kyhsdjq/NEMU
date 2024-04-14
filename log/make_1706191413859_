@@ -1,0 +1,17 @@
+>
+make-[1]: Entering directory '/home/pa221220164/pa_nju/game'
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/common/main.o src/common/main.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/common/lib/syscall.o src/common/lib/syscall.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/common/device/font.o src/common/device/font.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/common/device/audio.o src/common/device/audio.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/common/device/timer.o src/common/device/timer.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/common/device/video.o src/common/device/video.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/common/device/palette.o src/common/device/palette.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/typing/draw.o src/typing/draw.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/typing/game.o src/typing/game.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/typing/keyboard.o src/typing/keyboard.c
+gcc -m32 -MMD -Wall -Werror -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include -I./src/typing/include   -c -o src/typing/effect.o src/typing/effect.c
+ld -melf_i386  -e game_init -o game src/common/main.o src/common/lib/syscall.o src/common/device/font.o src/common/device/audio.o src/common/device/timer.o src/common/device/video.o src/common/device/palette.o src/typing/draw.o src/typing/game.o src/typing/keyboard.o src/typing/effect.o  ../libs/newlib/libc.a
+dd if=/dev/null of=game seek=2048
+cat `find ./data/typing/ -type f | sort` >> game
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/game'

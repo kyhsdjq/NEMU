@@ -1,0 +1,27 @@
+> test_batch-3-3-mute
+make-[1]: Entering directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase mov-c --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-c[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c2
+NEMU2 terminated
+./nemu/nemu --autorun --testcase mov-jcc --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-jcc[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c1
+NEMU2 terminated
+./nemu/nemu --autorun --testcase add --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/add[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049088
+NEMU2 terminated
+./nemu/nemu --autorun --testcase add-longlong --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/add-longlong[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049100
+NEMU2 terminated
+./nemu/nemu --autorun --testcase if-else --kernel

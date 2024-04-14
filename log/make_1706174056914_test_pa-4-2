@@ -1,0 +1,41 @@
+> test_pa-4-2
+cd nemu && make
+------make------
+1706174056936
+Thu 25 Jan 2024 05:14:16 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/nemu'
+make-[1]: 'nemu' is up to date.
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/nemu'
+cd testcase && make
+------make------
+1706174056963
+Thu 25 Jan 2024 05:14:16 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/testcase'
+cd kernel && make
+------make------
+1706174056995
+Thu 25 Jan 2024 05:14:16 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/kernel'
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/elf/elf.o src/elf/elf.c
+ld -Ttext=0xc0030000 -m elf_i386  -e start -o kernel start/start.o ./src/irq/do_irq.o ./src/syscall/do_syscall.o ./src/fs/fs.o ./src/memory/vmem.o ./src/memory/kvm.o ./src/memory/mm.o ./src/main.o ./src/lib/misc.o ./src/lib/printk.o ./src/lib/serial.o ./src/irq/idt.o ./src/irq/i8259.o ./src/irq/irq_handle.o ./src/elf/elf.o ./src/driver/ide/cache.o ./src/driver/ide/dma.o ./src/driver/ide/ide.o ./src/driver/ide/disk.o src/memory/mm_malloc.o  ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property kernel
+objcopy -S -O binary kernel kernel.img
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/kernel'
+make test_batch-3-3-mute
+------make------
+1706174057125
+Thu 25 Jan 2024 05:14:17 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase mov-c --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-c[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+eip = 0xc0031e28, laddr = 0xc8000000, pdir_base = 0x72000, &pde = 0x72c80, pde = 0x0 
+make-[1]: Leaving directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase hello-inline --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/hello-inline[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+eip = 0xc0031e28, laddr = 0xc8000fa0, pdir_base = 0x72000, &pde = 0x72c80, pde = 0x0 

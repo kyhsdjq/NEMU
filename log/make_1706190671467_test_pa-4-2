@@ -1,0 +1,41 @@
+> test_pa-4-2
+cd nemu && make
+------make------
+1706190671489
+Thu 25 Jan 2024 09:51:11 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/nemu'
+make-[1]: 'nemu' is up to date.
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/nemu'
+cd testcase && make
+------make------
+1706190671517
+Thu 25 Jan 2024 09:51:11 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/testcase'
+cd kernel && make
+------make------
+1706190671551
+Thu 25 Jan 2024 09:51:11 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/kernel'
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/memory/vmem.o src/memory/vmem.c
+ld -Ttext=0xc0030000 -m elf_i386  -e start -o kernel start/start.o ./src/irq/do_irq.o ./src/syscall/do_syscall.o ./src/fs/fs.o ./src/memory/vmem.o ./src/memory/kvm.o ./src/memory/mm.o ./src/main.o ./src/lib/misc.o ./src/lib/printk.o ./src/lib/serial.o ./src/irq/idt.o ./src/irq/i8259.o ./src/irq/irq_handle.o ./src/elf/elf.o ./src/driver/ide/cache.o ./src/driver/ide/dma.o ./src/driver/ide/ide.o ./src/driver/ide/disk.o src/memory/mm_malloc.o  ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property kernel
+objcopy -S -O binary kernel kernel.img
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/kernel'
+./nemu/nemu --autorun --testcase hello-inline --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/hello-inline[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+[1;35m[src/memory/vmem.c,45,video_mapping_read_test] {kernel} Passed[0m
+Hello, world!
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049023
+NEMU2 terminated
+./nemu/nemu --autorun --testcase echo --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/echo[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+[1;35m[src/memory/vmem.c,45,video_mapping_read_test] {kernel} Passed[0m
+ASDASQWERQWEEQWRFSDFERQWENEMU2 terminated

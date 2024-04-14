@@ -1,0 +1,246 @@
+> test_pa-4-2
+cd nemu && make
+------make------
+1706190770675
+Thu 25 Jan 2024 09:52:50 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/nemu'
+make-[1]: 'nemu' is up to date.
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/nemu'
+cd testcase && make
+------make------
+1706190770701
+Thu 25 Jan 2024 09:52:50 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/testcase'
+cd kernel && make
+------make------
+1706190770736
+Thu 25 Jan 2024 09:52:50 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/kernel'
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/memory/vmem.o src/memory/vmem.c
+ld -Ttext=0xc0030000 -m elf_i386  -e start -o kernel start/start.o ./src/irq/do_irq.o ./src/syscall/do_syscall.o ./src/fs/fs.o ./src/memory/vmem.o ./src/memory/kvm.o ./src/memory/mm.o ./src/main.o ./src/lib/misc.o ./src/lib/printk.o ./src/lib/serial.o ./src/irq/idt.o ./src/irq/i8259.o ./src/irq/irq_handle.o ./src/elf/elf.o ./src/driver/ide/cache.o ./src/driver/ide/dma.o ./src/driver/ide/ide.o ./src/driver/ide/disk.o src/memory/mm_malloc.o  ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property kernel
+objcopy -S -O binary kernel kernel.img
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/kernel'
+make test_batch-3-3-mute
+------make------
+1706190770853
+Thu 25 Jan 2024 09:52:50 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase mov-c --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-c[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c2
+NEMU2 terminated
+./nemu/nemu --autorun --testcase mov-jcc --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-jcc[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c1
+NEMU2 terminated
+./nemu/nemu --autorun --testcase add --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/add[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049088
+NEMU2 terminated
+./nemu/nemu --autorun --testcase add-longlong --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/add-longlong[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049100
+NEMU2 terminated
+./nemu/nemu --autorun --testcase if-else --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/if-else[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490ae
+NEMU2 terminated
+./nemu/nemu --autorun --testcase fib --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/fib[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049064
+NEMU2 terminated
+./nemu/nemu --autorun --testcase bubble-sort --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/bubble-sort[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490e7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase quick-sort --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/quick-sort[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080491bc
+NEMU2 terminated
+./nemu/nemu --autorun --testcase select-sort --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/select-sort[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490e7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase max --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/max[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+NEMU2 terminated
+./nemu/nemu --autorun --testcase min3 --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/min3[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase pascal --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/pascal[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049134
+NEMU2 terminated
+./nemu/nemu --autorun --testcase bit  --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/bit[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080491f4
+NEMU2 terminated
+./nemu/nemu --autorun --testcase movsx --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/movsx[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049132
+NEMU2 terminated
+./nemu/nemu --autorun --testcase sub-longlong --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/sub-longlong[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490f7
+NEMU2 terminated
+./nemu/nemu --autorun --testcase fact --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/fact[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049094
+NEMU2 terminated
+./nemu/nemu --autorun --testcase gotbaha --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/gotbaha[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490c5
+NEMU2 terminated
+./nemu/nemu --autorun --testcase leap-year --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/leap-year[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049086
+NEMU2 terminated
+./nemu/nemu --autorun --testcase matrix-mul-small --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/matrix-mul-small[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049110
+NEMU2 terminated
+./nemu/nemu --autorun --testcase matrix-mul --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/matrix-mul[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x0804915d
+NEMU2 terminated
+./nemu/nemu --autorun --testcase mul-longlong  --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mul-longlong[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x0804911a
+NEMU2 terminated
+./nemu/nemu --autorun --testcase prime --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/prime[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049088
+NEMU2 terminated
+./nemu/nemu --autorun --testcase shuixianhua --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/shuixianhua[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490fe
+NEMU2 terminated
+./nemu/nemu --autorun --testcase sum --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/sum[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x0804903e
+NEMU2 terminated
+./nemu/nemu --autorun --testcase wanshu --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/wanshu[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049086
+NEMU2 terminated
+./nemu/nemu --autorun --testcase struct --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/struct[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490ec
+NEMU2 terminated
+./nemu/nemu --autorun --testcase string --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/string[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049150
+NEMU2 terminated
+./nemu/nemu --autorun --testcase hello-str  --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/hello-str[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x080490d8
+NEMU2 terminated
+./nemu/nemu --autorun --testcase test-float --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/test-float[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+nemu: HIT [0;31mBAD[0m TRAP at eip = 0x080490bd
+NEMU2 terminated
+make-[1]: Leaving directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase hello-inline --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/hello-inline[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+Hello, world!
+nemu: HIT [0;32mGOOD[0m TRAP at eip = 0x08049023
+NEMU2 terminated
+./nemu/nemu --autorun --testcase echo --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/echo[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/memory/vmem.c,23,create_video_mapping] {kernel} updir = 0xc0093000, kpdir = 0xc0072000[0m
+ASDQWEFGGHHKJHGFDSMNBVCXZMNBVCXZJHGFRSWUYTREWQNBGVCXNEMU2 terminated

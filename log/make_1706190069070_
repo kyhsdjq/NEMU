@@ -1,0 +1,7 @@
+>
+make-[1]: Entering directory '/home/pa221220164/pa_nju/kernel'
+gcc -m32 -MMD -I./include -I../include   -c -o src/irq/do_irq.o src/irq/do_irq.S
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/syscall/do_syscall.o src/syscall/do_syscall.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/fs/fs.o src/fs/fs.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/memory/vmem.o src/memory/vmem.c
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/kernel'

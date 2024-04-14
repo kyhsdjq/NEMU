@@ -1,0 +1,101 @@
+> test_pa-4-2
+cd nemu && make
+------make------
+1706176772858
+Thu 25 Jan 2024 05:59:32 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/nemu'
+make-[1]: 'nemu' is up to date.
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/nemu'
+cd testcase && make
+------make------
+1706176772885
+Thu 25 Jan 2024 05:59:32 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-pic -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/testcase'
+cd kernel && make
+------make------
+1706176772920
+Thu 25 Jan 2024 05:59:32 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju/kernel'
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/elf/elf.o src/elf/elf.c
+ld -Ttext=0xc0030000 -m elf_i386  -e start -o kernel start/start.o ./src/irq/do_irq.o ./src/syscall/do_syscall.o ./src/fs/fs.o ./src/memory/vmem.o ./src/memory/kvm.o ./src/memory/mm.o ./src/main.o ./src/lib/misc.o ./src/lib/printk.o ./src/lib/serial.o ./src/irq/idt.o ./src/irq/i8259.o ./src/irq/irq_handle.o ./src/elf/elf.o ./src/driver/ide/cache.o ./src/driver/ide/dma.o ./src/driver/ide/ide.o ./src/driver/ide/disk.o src/memory/mm_malloc.o  ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property kernel
+objcopy -S -O binary kernel kernel.img
+make-[1]: Leaving directory '/home/pa221220164/pa_nju/kernel'
+make test_batch-3-3-mute
+------make------
+1706176773059
+Thu 25 Jan 2024 05:59:33 PM CST
+make-[1]: Entering directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase mov-c --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/mov-c[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0xc7efffa0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0xc7efffd4[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xf4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0xc7efffa0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0xc7effff4[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0xca[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0xc7f00fa0, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0xc7f00014[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x38[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0xc7f01fa0, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0xc7f00034[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1003000, filesz = 0x0[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0xc7f02fa0, offset = 0x3000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+eip = 0x804b000, laddr = 0x804b000, pdir_base = 0x93000, &pde = 0x93080, pde = 0x51007 
+eip = 0x804b000, laddr = 0x804b000, pt_base = 0x51000, &pte = 0x51080, pte = 0x0 
+make-[1]: Leaving directory '/home/pa221220164/pa_nju'
+./nemu/nemu --autorun --testcase hello-inline --kernel
+NEMU load and execute img: [1m[32m./kernel/kernel.img[0m  elf: [1m[36m./testcase/bin/hello-inline[0m
+[1;35m[src/main.c,88,init_cond] {kernel} Hello, NEMU world![0m
+[1;35m[src/elf/elf.c,28,loader] {kernel} ELF loading from hard disk.[0m
+[1;35m[src/elf/elf.c,35,loader] {kernel} elf = 0xc7efffa0[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0xc7efffd4[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1000000, filesz = 0xd4[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0xc7efffa0, offset = 0x0[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0xc7effff4[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1001000, filesz = 0x2b[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0xc7f00fa0, offset = 0x1000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+[1;35m[src/elf/elf.c,55,loader] {kernel} ph = 0xc7f00014[0m
+[1;35m[src/elf/elf.c,57,loader] {kernel} 1[0m
+[1;35m[src/elf/elf.c,59,loader] {kernel} 2[0m
+[1;35m[src/elf/elf.c,61,loader] {kernel} 3[0m
+[1;35m[src/elf/elf.c,62,loader] {kernel} physical_addr = 0x1002000, filesz = 0x48[0m
+[1;35m[src/elf/elf.c,63,loader] {kernel} elf + offset = 0xc7f01fa0, offset = 0x2000[0m
+[1;35m[src/elf/elf.c,65,loader] {kernel} 4[0m
+[1;35m[src/elf/elf.c,67,loader] {kernel} 5[0m
+eip = 0x804b000, laddr = 0x804b000, pdir_base = 0x93000, &pde = 0x93080, pde = 0x51007 
+eip = 0x804b000, laddr = 0x804b000, pt_base = 0x51000, &pte = 0x51080, pte = 0x0 
